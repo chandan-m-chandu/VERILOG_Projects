@@ -1,0 +1,32 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+module full_adder_testbench;
+  reg A, B, Cin;
+  wire Y;
+
+  // Instantiation
+  full_adder uut (
+    .A(A),
+    .B(B),
+    .Cin(Cin),
+    .Y(Y)
+  );
+
+  initial begin
+    $display("A B Cin | Y");
+    $display("---------|---");
+    
+    for (int i = 0; i < 8; i++) begin
+      {A, B, Cin} = i; // Assign values based on loop iteration
+      #10; // Wait for 10 time units
+      $display("%b %b %b | %b", A, B, Cin, Y);
+    end
+
+    $finish; 
+  end
+
+  initial begin
+    $monitor("At time %t, A = %b, B = %b, Cin = %b, Y = %b", $time, A, B, Cin, Y);
+  end
+
+endmodule
