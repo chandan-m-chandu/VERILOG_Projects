@@ -1,1 +1,1 @@
-THis REPOSITORY consists of basic to intermidiate verilog design & verification Projects
+THis REPOSITORY consists of basic to intermidiate verilog design Projects
