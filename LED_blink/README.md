@@ -14,6 +14,9 @@ This project implements a simple LED blinker on the Zedboard FPGA. The blink rat
   - Vivado Design Suite (2022 or newer recommended)
   - ModelSim or equivalent for simulation (optional)
 
+![image](https://github.com/user-attachments/assets/38d56d89-c85a-4407-b476-f0f8135d6a66)
+
+
 ## Getting Started
 1. Clone the repository:
    ```bash
