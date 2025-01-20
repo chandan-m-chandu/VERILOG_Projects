@@ -2,7 +2,7 @@ module ripple_carry_adder_tb();
     logic [3:0]A; logic[3:0]B; logic C; 
     logic[4:0]sum;
     
-    ripple_adder uut(A,B,C,sum,Cout);
+    Ripple_carry_adder uut(A,B,C,sum,Cout);
     
 initial begin 
         A=0;B=0;C=0;
