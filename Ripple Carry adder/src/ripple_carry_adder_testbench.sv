@@ -13,9 +13,7 @@ initial begin
     #10 A=15;B=0;C=0;
     #10 A=10;B=9;C=1;
     #10 A=5;B=25;C=0;
-    #10;
-    
-    $finish;
+    #10;    
+$finish;
 end
-
 endmodule
